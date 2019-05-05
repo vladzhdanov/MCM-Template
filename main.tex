@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage[toc,page]{appendix}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage[textwidth=6in,textheight=8in]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{indentfirst}
+\usepackage[utf8x]{inputenc}
+\usepackage{lastpage}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{scrextend}
+\usepackage{sectsty}
+\usepackage{subfigure}
+
+% Update these values when problem is chosen
+% ==========================================
+\newcommand{\teamNumber}{123456}
+\newcommand{\problemChosen}{C}
+% ==========================================
+
+\sectionfont{\large\centering}
+\subsectionfont{\normalsize}
+\subsubsectionfont{\normalsize}
+\paragraphfont{\normalsize}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Team \#\teamNumber\hfill\thepage\ of \pageref{LastPage}}
+\title{MCM Paper}
+
+\begin{document}
+\begin{titlepage}
+
+% MCM Team Header
+\newgeometry{margin=.75in}
+\begin{center}
+\begingroup
+\setlength{\parindent}{0pt}
+\begin{minipage}{0.275\linewidth}
+    For office use only\\[4pt]
+    \makebox[0.15\linewidth][l]{T1}\rule[-2pt]{0.65\linewidth}{0.5pt}\\[2.5pt]
+    \makebox[0.15\linewidth][l]{T2}\rule[-2pt]{0.65\linewidth}{0.5pt}\\[2.5pt]
+    \makebox[0.15\linewidth][l]{T3}\rule[-2pt]{0.65\linewidth}{0.5pt}\\[2.5pt]
+    \makebox[0.15\linewidth][l]{T4}\rule[-2pt]{0.65\linewidth}{0.5pt}
+\end{minipage}%
+\begin{minipage}{0.45\linewidth}
+    \centering
+    Team Control Number\\[0.7pc]
+    {\LARGE\textbf{\teamNumber}}\\[1.25pc]
+    Problem Chosen\\[0.7pc]
+    {\Huge\textbf{\problemChosen}}
+\end{minipage}%
+\begin{minipage}{0.275\linewidth}
+    For office use only\\[4pt]
+    \makebox[0.15\linewidth][l]{F1}\rule[-2pt]{0.65\linewidth}{0.5pt}\\[2.5pt]
+    \makebox[0.15\linewidth][l]{F2}\rule[-2pt]{0.65\linewidth}{0.5pt}\\[2.5pt]
+    \makebox[0.15\linewidth][l]{F3}\rule[-2pt]{0.65\linewidth}{0.5pt}\\[2.5pt]
+    \makebox[0.15\linewidth][l]{F4}\rule[-2pt]{0.65\linewidth}{0.5pt}
+\end{minipage}\par
+    \vskip 8pt
+    \rule{\linewidth}{0.5pt}\par
+\textbf{{\large\the\year}\\MCM/ICM\\Summary Sheet}
+\endgroup
+\vskip 8pt%
+\normalfont \LARGE  Title:\par
+\end{center}
+
+% Summary Page
+\begin{addmargin}[.5in]{.5in}
+Summary goes here. 
+For citations \cite{testing} - in text citation (Use a BibTex generator and throw it into sources.bib). 
+
+\end{addmargin}
+\restoregeometry
+
+\end{titlepage}
+
+% Table of Contents
+\newpage
+{\small\tableofcontents}
+
+
+% Introduction
+\newpage
+\section{Introduction}
+
+\subsection{Problem Summary}
+
+\subsection{Data Sources}
+    
+\subsection{Existing Models}
+
+\subsection{Our Model}
+
+
+% Background
+\section{Background}
+
+
+% Assumptions
+\section{Assumptions}
+
+
+% Nomenclature
+\section{Nomenclature}
+
+
+% Models 
+\section{Model Development}
+
+\subsection{Validation and Verification}
+
+
+% Results
+\section{Results}
+
+
+% Model Analysis
+\section{Sensitivity Analysis}
+
+
+% Conclusion
+\section{Conclusions}
+
+\subsection{Model Strengths}
+
+\subsection{Model Weaknesses and Limiting Assumptions}
+
+% Special Assignment (Depends on the problem)
+\newpage
+\begin{center}
+\section{Memo/Letter}
+\end{center}
+
+
+% References
+\newpage
+\addcontentsline{toc}{section}{References}
+\bibliography{sources} 
+\bibliographystyle{ieeetr}
+
+% Appendix
+\newpage
+\addcontentsline{toc}{section}{Appendix}
+\begin{appendix}
+\section*{Appendix}
+
+\end{appendix}
+\end{document}
